@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="android.example.com.myfood.MainActivity"
+    android:background="#ed1b24">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="318dp"
+        android:padding="@dimen/padding_wide"
+        android:src="@drawable/tulisanilly"
+        android:id="@+id/imageView" android:contentDescription="TODO"/>
+
+    <TextView
+        android:id="@+id/textViewPilihMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="210dp"
+        android:text="@string/pilihMenu"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#FFFF"/>
+
+    <RadioGroup
+        android:id="@+id/rgPilihMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/textViewPilihMenu">
+
+        <RadioButton
+            android:id="@+id/rbDineIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/dine_in"
+            android:textStyle="bold"
+            android:textColor="#FFFF"/>
+
+        <RadioButton
+            android:id="@+id/rbTakeAway"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/take_away"
+            android:textColor="#FFFF"
+            android:textStyle="bold"/>
+
+    </RadioGroup>
+    <Button
+        android:id="@+id/buttonPesanSkrg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pesan_sekarang"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/rgPilihMenu"/>
+
+  </RelativeLayout>

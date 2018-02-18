@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ed1b24"
+    tools:context="android.example.com.myfood.DineIn">
+
+
+    <TextView
+        android:id="@+id/textViewDC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="67dp"
+        android:text="Detail Customer: "
+        android:textColor="#FFFF"
+        android:textStyle="bold"
+        android:textSize="25dp"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewDC"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/nameCustomer" />
+
+    <TextView
+        android:id="@+id/textViewNoMeja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignStart="@+id/name"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="26dp"
+        android:text="@string/no_meja"
+        android:textColor="#FFFF"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinnerLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textViewDC"
+        android:layout_alignRight="@+id/textViewDC"
+        android:layout_alignTop="@+id/textViewNoMeja"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:entries="@array/labels_array" />
+
+    <Button
+        android:id="@+id/buttonPilihPesanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="@string/pilih_pesanan" />
+</RelativeLayout>

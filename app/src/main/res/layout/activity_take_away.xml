@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ed1b24"
+    tools:context="android.example.com.myfood.TakeAway">
+
+    <TextView
+        android:id="@+id/textViewIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:text="@string/identitas_pemesanan"
+        android:textStyle="bold"
+        android:textColor="#FFFF"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/editTextIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewIP"
+        android:layout_alignStart="@+id/textViewIP"
+        android:layout_below="@+id/textViewIP"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="@string/nameCustomer"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextIP"
+        android:layout_alignStart="@+id/editTextIP"
+        android:layout_below="@+id/editTextIP"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/phone"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/editTextAddrs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_alignLeft="@+id/editTextPhone"
+        android:layout_alignStart="@+id/editTextPhone"
+        android:layout_below="@+id/editTextPhone"
+        android:layout_marginTop="10dp"
+        android:inputType="textPersonName"
+        android:hint="@string/address" />
+
+    <EditText
+        android:id="@+id/editTextNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextAddrs"
+        android:layout_alignStart="@+id/editTextAddrs"
+        android:layout_below="@+id/editTextAddrs"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/note" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/buttonPilPes1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timepicker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="@string/pilih_pesanan1" />
+
+    <Button
+        android:id="@+id/datepicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextNote"
+        android:layout_alignStart="@+id/editTextNote"
+        android:layout_below="@+id/editTextNote"
+        android:layout_marginTop="17dp"
+        android:layout_weight="1"
+        android:text="Tanggal" />
+
+    <Button
+        android:id="@+id/timepicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/datepicker"
+        android:layout_alignBottom="@+id/datepicker"
+        android:layout_alignEnd="@+id/textViewIP"
+        android:layout_alignRight="@+id/textViewIP"
+        android:layout_weight="1"
+        android:text="Waktu" />
+
+
+</RelativeLayout>

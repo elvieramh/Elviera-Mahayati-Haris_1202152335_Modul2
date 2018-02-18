@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="40dp"
+    android:paddingBottom="40dp"
+    android:background="#ed1b24"
+    tools:context="android.example.com.myfood.DetailMenu">
+
+    <ImageView
+        android:id="@+id/detailGambar"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginRight="25dp"
+        android:src="@drawable/cheesebayam"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/namaMakanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cheese Bayam"
+        android:textColor="#FFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/harga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rp 14500"
+        android:textColor="#FFFF"
+        android:textSize="20dp"
+        android:textStyle="normal"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/komposisi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:text="Komposisi: "
+        android:textColor="#FFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/komposisiMakanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/komposisi_cheesebayam"
+        android:textStyle="normal"
+        android:textColor="#FFFF"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="18dp" />
+
+
+</LinearLayout>

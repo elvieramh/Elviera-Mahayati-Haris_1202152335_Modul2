@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ed1b24">
+
+
+    <ImageView
+        android:id="@+id/listGambar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/cheesebayam"/>
+
+    <TextView
+        android:id="@+id/listNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/listGambar"
+        android:layout_toRightOf="@+id/listGambar"
+        android:paddingTop="15dp"
+        android:text="Cheese Bayam"
+        android:textColor="#FFFF"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/listHarga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listNama"
+        android:layout_toRightOf="@+id/listGambar"
+        android:text="Rp 14.500"
+        android:textColor="#FFFF"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:id="@+id/listID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listHarga"
+        android:layout_toRightOf="@+id/listGambar"
+        android:visibility="invisible"
+        android:text="ID"
+        android:textColor="#FFFF"/>
+
+    <View
+        android:layout_below="@+id/listGambar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="#ccc"/>
+</RelativeLayout>
